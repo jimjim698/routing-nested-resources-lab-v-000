@@ -909,3 +909,12 @@ Processing by ArtistsController#index as HTML
   [1m[36mArtist Load (0.2ms)[0m  [1mSELECT "artists".* FROM "artists"[0m
   Rendered artists/index.html.erb within layouts/application (5.4ms)
 Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/1/songs" for 73.65.241.186 at 2018-10-16 02:03:45 +0000
+Cannot render console from 73.65.241.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[35mArtist Load (0.4ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" IS NULL LIMIT 1
+Redirected to http://159.89.134.39:46592/artists
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
